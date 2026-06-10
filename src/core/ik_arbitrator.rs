@@ -75,7 +75,7 @@ impl IKArbitrator {
         &'a self,
         cur_node: Option<&'a Link<Lexeme>>,
         option_path: &mut LexemePath,
-    ) -> Vec<Option<&Link<Lexeme>>> {
+    ) -> Vec<Option<&'a Link<Lexeme>>> {
         let mut conflict_stack: Vec<Option<&Link<Lexeme>>> = Vec::new();
         let mut cur = cur_node;
         while let Some(node) = cur {

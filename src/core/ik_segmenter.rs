@@ -13,8 +13,8 @@ use crate::dict::dictionary::GLOBAL_DICT;
 
 #[derive(Debug, Clone)]
 pub enum TokenMode {
-    INDEX,
-    SEARCH,
+    INDEX, // enum all possible Chinese words. eg. "明天团队加班" ==> "明天", "天团", "团队", "加班"
+    SEARCH, // the best match
 }
 // ik main class
 pub struct IKSegmenter {

@@ -10,7 +10,7 @@ homepage = "https://github.com/blueshen/ik-rs"
 repository = "https://github.com/blueshen/ik-rs"
 readme = "README.md"
 keywords = ["search", "information", "retrieval", "tantivy", "ik-analyzer"]
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
@@ -27,7 +27,7 @@ use-std-sync = []
 use-parking-lot = ["dep:parking_lot"]
 
 [dev-dependencies]
-criterion = { version = "0.5.1", features = ["html_reports"] }
+criterion = { version = "0.8", features = ["html_reports"] }
 random-string = "1.0.0"
 
 [[bench]]
